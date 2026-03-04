@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -367,3 +368,367 @@
     <script src="script.js"></script>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="w-full min-h-screen relative flex flex-col lg:flex-row">
+      <section
+        class="w-full text-white flex flex-col px-8 py-10 gap-2 md:px-12 md:py-12 lg:fixed lg:w-[50%] lg:h-screen lg:px-12 lg:py-16 lg:justify-between"
+      >
+        <div class="flex flex-col gap-3">
+          <h1 class="text-4xl font-bold md:text-4xl lg:text-5xl">
+            Darwin Sumait
+          </h1>
+          <p class="text-xl font-semibold md:text-2xl">Student</p>
+          <p class="primary-text max-w-sm md:max-w-md">
+            I am a student who wants to become a web developer someday and I am
+            always practicing my programming skills.
+          </p>
+        </div>
+
+        <nav class="hidden lg:flex flex-col gap-4" id="desktopNav">
+          <a
+            href="#about"
+            class="nav-link flex items-center gap-3 group active"
+          >
+            <div
+              class="nav-line h-[2px] bg-white transition-all duration-300 w-[60px]"
+            ></div>
+            <span
+              class="nav-label text-sm font-semibold tracking-widest text-white"
+              >ABOUT</span
+            >
+          </a>
+          <a href="#experiences" class="nav-link flex items-center gap-3 group">
+            <div
+              class="nav-line h-[2px] primary-bg transition-all duration-300 w-[30px]"
+            ></div>
+            <span
+              class="nav-label text-sm font-semibold tracking-widest primary-text"
+              >EXPERIENCE</span
+            >
+          </a>
+          <a href="#techStacks" class="nav-link flex items-center gap-3 group">
+            <div
+              class="nav-line h-[2px] primary-bg transition-all duration-300 w-[30px]"
+            ></div>
+            <span
+              class="nav-label text-sm font-semibold tracking-widest primary-text"
+              >TECH STACKS</span
+            >
+          </a>
+          <a href="#projects" class="nav-link flex items-center gap-3 group">
+            <div
+              class="nav-line h-[2px] primary-bg transition-all duration-300 w-[30px]"
+            ></div>
+            <span
+              class="nav-label text-sm font-semibold tracking-widest primary-text"
+              >PROJECTS</span
+            >
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-4 mt-4 lg:mt-0">
+          <a href="https://github.com/hydro08">
+            <img
+              src="images/github.png"
+              alt="GitHub"
+              class="w-7 h-7 cursor-pointer opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </a>
+
+          <a href="https://facebook.com/hydro0708">
+            <img
+              src="images/facebook.png"
+              alt="Facebook"
+              class="w-7 h-7 cursor-pointer opacity-70 hover:opacity-100 transition-opacity"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="w-full text-white flex flex-col lg:w-[50%] lg:ml-[50%]">
+        <div
+          class="w-full min-h-screen flex flex-col justify-center px-8 py-16 md:px-12"
+          id="about"
+        >
+          <h2 class="text-sm font-bold tracking-widest mb-8 lg:hidden">
+            ABOUT
+          </h2>
+          <div class="flex flex-col gap-6 max-w-xl">
+            <p class="text-base primary-text md:text-lg">
+              I'm a self-taught web development learner and a college student
+              who is passionate about understanding how the web works. What
+              started as simple curiosity gradually became a strong interest in
+              building websites and exploring how design and functionality come
+              together.
+            </p>
+            <p class="text-base primary-text md:text-lg">
+              Currently, I focus on strengthening my foundation in HTML, CSS,
+              and JavaScript by building personal projects and practicing
+              consistently. I enjoy experimenting with layouts, improving
+              responsiveness, and writing cleaner, more structured code as I
+              continue learning.
+            </p>
+            <p class="text-base primary-text md:text-lg">
+              As I grow in this field, my goal is to become a skilled web
+              developer capable of building meaningful and user-friendly digital
+              experiences. I believe that with consistency, discipline, and
+              continuous learning, I can steadily turn my passion into a
+              professional career.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full min-h-screen flex flex-col justify-center px-8 py-16 md:px-12"
+          id="experiences"
+        >
+          <h2 class="text-sm font-bold tracking-widest mb-12 lg:hidden">
+            EXPERIENCE
+          </h2>
+          <div class="flex flex-col gap-6 max-w-xl">
+            <div class="timeline-item">
+              <p class="text-xs font-bold tracking-widest primary-text mb-1">
+                2023
+              </p>
+              <h3 class="text-white font-semibold text-lg">Hello, World!</h3>
+              <p class="primary-text text-sm mt-1">
+                Wrote my very first line of code. That one
+                <span
+                  class="text-white font-mono text-xs bg-slate-800 px-1 py-0.5 rounded"
+                  >print("Hello, World!")</span
+                >
+                moment that started everything.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <p class="text-xs font-bold tracking-widest primary-text mb-1">
+                2024
+              </p>
+              <p class="text-xs primary-text mb-1">1st Year · BSIT</p>
+              <h3 class="text-white font-semibold text-lg">
+                Started College & Discovered Web Development
+              </h3>
+              <p class="primary-text text-sm mt-1">
+                Enrolled in Bachelor of Science in Information Technology
+                (BSIT). Started self-studying HTML and CSS and developed a
+                strong interest in how the web works.
+              </p>
+            </div>
+            <div class="timeline-item active">
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-1">
+                2025 — PRESENT
+              </p>
+              <p class="text-xs primary-text mb-1">2nd Year · BSIT</p>
+              <h3 class="text-white font-semibold text-lg">Leveling Up</h3>
+              <p class="primary-text text-sm mt-1">
+                Expanded my skills by learning Tailwind CSS for faster and more
+                responsive styling. Currently exploring React and building
+                personal projects to strengthen my frontend development skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full min-h-screen flex flex-col justify-center px-8 py-16 md:px-12"
+          id="techStacks"
+        >
+          <h2 class="text-sm font-bold tracking-widest mb-12 lg:hidden">
+            TECH STACKS
+          </h2>
+          <div class="flex flex-col gap-10 max-w-xl">
+            <div>
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-4">
+                FRONT-END
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">React</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-4">
+                BACK-END
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Java</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-4">
+                DATABASE
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Supabase</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-4">
+                AI TOOLS
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge">ChatGPT</span>
+                <span class="tech-badge">Claude</span>
+                <span class="tech-badge">GitHub Copilot</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-bold tracking-widest text-sky-400 mb-4">
+                DEVELOPER TOOLS
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">GitHub</span>
+                <span class="tech-badge">VS Code</span>
+                <span class="tech-badge">Eclipse</span>
+                <span class="tech-badge">Discord</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full min-h-screen flex flex-col justify-center px-8 py-16 md:px-12"
+          id="projects"
+        >
+          <h2 class="text-sm font-bold tracking-widest mb-12 lg:hidden">
+            PROJECTS
+          </h2>
+          <div class="flex flex-col gap-6 max-w-xl">
+            <a
+              href="https://hydro08.github.io/poptheballoon/"
+              target="_blank"
+              class="project-card group"
+            >
+              <div class="flex justify-between items-start mb-3">
+                <h3
+                  class="text-white font-semibold text-lg group-hover:text-sky-400 transition-colors"
+                >
+                  🎈 PopTheBalloon
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 primary-text group-hover:text-sky-400 transition-colors mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5H3a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-2"
+                  />
+                </svg>
+              </div>
+              <p class="primary-text text-sm mb-4">
+                A fun balloon popping game built from scratch. Test your speed
+                and reflexes as you pop as many balloons as you can!
+                <span class="blue-color text-xs font-semibold"
+                  >· Best viewed on desktop</span
+                >
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge text-xs">HTML/CSS</span>
+                <span class="tech-badge text-xs">JavaScript</span>
+              </div>
+            </a>
+
+            <a
+              href="https://hydro08.github.io/mindmeshproj/"
+              target="_blank"
+              class="project-card group"
+            >
+              <div class="flex justify-between items-start mb-3">
+                <h3
+                  class="text-white font-semibold text-lg group-hover:text-sky-400 transition-colors"
+                >
+                  🧠 MindMesh
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 primary-text group-hover:text-sky-400 transition-colors mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5H3a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-2"
+                  />
+                </svg>
+              </div>
+              <p class="primary-text text-sm mb-4">
+                A flashcard app designed to help students study and memorize
+                topics more effectively through active recall.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge text-xs">HTML/CSS</span>
+                <span class="tech-badge text-xs">JavaScript</span>
+              </div>
+            </a>
+
+            <a
+              href="https://hydro08.github.io/wildpedia-web/"
+              target="_blank"
+              class="project-card group"
+            >
+              <div class="flex justify-between items-start mb-3">
+                <h3
+                  class="text-white font-semibold text-lg group-hover:text-sky-400 transition-colors"
+                >
+                  🐾 WildPedia
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 primary-text group-hover:text-sky-400 transition-colors mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5H3a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-2"
+                  />
+                </svg>
+              </div>
+              <p class="primary-text text-sm mb-4">
+                A Wikipedia-style website dedicated to wildlife. Browse and
+                explore information about various animals from around the world.
+                <span class="blue-color text-xs font-semibold"
+                  >· Best viewed on desktop</span
+                >
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge text-xs">HTML/CSS</span>
+                <span class="tech-badge text-xs">JavaScript</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <p class="text-white text-center mb-1" id="bottom"></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> ffbb429acd855d77aae60ea5ad6a77462a985603
