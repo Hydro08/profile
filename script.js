@@ -7,7 +7,7 @@ const currDate = new Date();
 const currYear = currDate.getFullYear();
 
 document.getElementById("bottom").innerHTML =
-  `&copy; 2026 – ${currYear} Darwin's Profile. All rights reserved. <br>
+  `&copy; 2026 - ${currYear} Darwin's Profile. All rights reserved. <br>
   Built with HTML, CSS, JavaScript & Tailwind CSS. Inspired by 
   <a href="https://brittanychiang.com" target="_blank" class="underline hover:text-sky-400 transition-colors">
     Brittany Chiang
