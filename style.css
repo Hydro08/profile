@@ -118,6 +118,51 @@ body {
   padding-left: 2rem;
 }
 
+.tech-badge {
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.project-card {
+  display: block;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.blue-color {
+  color: #38bdf8;
+}
+
+.nav-link:hover .nav-line {
+  width: 70px !important;
+  background-color: white !important;
+}
+
+.nav-link:hover .nav-label {
+  color: white !important;
+}
+
+.tech-badge:hover {
+  background-color: #38bdf820;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.project-card:hover {
+  background-color: #1e3a5f30;
+  border-color: #38bdf8;
+}
+
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -146,40 +191,4 @@ body {
 .timeline-item.active::before {
   background-color: #38bdf8;
   box-shadow: 0 0 8px #38bdf8;
-}
-
-.tech-badge {
-  background-color: #1e293b;
-  color: #94a3b8;
-  border: 1px solid #334155;
-  padding: 0.35rem 0.85rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.tech-badge:hover {
-  background-color: #38bdf820;
-  border-color: #38bdf8;
-  color: #38bdf8;
-}
-
-.project-card {
-  display: block;
-  background-color: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.project-card:hover {
-  background-color: #1e3a5f30;
-  border-color: #38bdf8;
-}
-
-.blue-color {
-  color: #38bdf8;
 }
