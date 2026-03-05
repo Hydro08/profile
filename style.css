@@ -90,12 +90,6 @@ body {
   color: #38bdf8;
 }
 
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-}
-
 :root {
   --bg-color: #0f172a;
   --primary-text: #94a3b8;
@@ -191,4 +185,10 @@ body {
 .timeline-item.active::before {
   background-color: #38bdf8;
   box-shadow: 0 0 8px #38bdf8;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
