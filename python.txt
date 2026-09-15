@@ -1,0 +1,80 @@
+import tkinter as tk
+from tkinter import messagebox
+
+class ArayMo:
+
+    ito_lapad = 700
+    ito_taas = 500
+
+    bilang_pababa = 5
+
+    def __init__(self):
+        self.aray = tk.Tk()
+        self.aray.title("ARAY MO")
+        self.aray.protocol("WM_DELETE_WINDOW", lambda: None)
+
+        self.mga_kulay = ["blue", "green", "red", "orange", "black"]
+        self.numero = 0
+
+        self._ginitna_()
+        self._ui_()
+
+        self.aray.mainloop()
+
+    def _ginitna_(self):
+        self.lapad = self.aray.winfo_screenwidth()
+        self.taas = self.aray.winfo_screenheight()
+        pahiga = (self.lapad - self.ito_lapad) // 2
+        pataas = (self.taas - self.ito_taas) // 2
+        self.aray.geometry(f"{self.ito_lapad}x{self.ito_taas}+{pahiga}+{pataas}")
+
+    def _ui_(self):
+        self.bait_text = tk.Label(self.aray, text="ARAY MO BAKIT MO \nPININDOT YUNG FOLDER.", font=("Arial", 24))
+        self.bait_text.pack(pady=(20, 0))
+
+        self.aray.after(1000, self._bilang_pababa_)
+
+    def _bilang_pababa_(self):
+        self.bilang = tk.Label(self.aray, text="5", font=("Arial", 24))
+        self.bilang.pack(pady=(20, 0))
+
+        self.aray.after(1000, self._tapos_na_ang_oras, 5)
+
+    def _tapos_na_ang_oras(self, sikands):
+        self.bilang.config(text=str(sikands))
+
+        if sikands > 0:
+            self.aray.after(1000, self._tapos_na_ang_oras, sikands - 1)
+        else:
+            self.bait_text.config(text="LAGOT KA!!!")
+            self.aray.after(1000, self._pang_asar)
+            self.aray.after(500, self.iba_ibang_kulay)
+            self.aray.after(1000, self._malaki_maliit_na_window)
+            self.aray.after(500, self._missij)
+
+    def _pang_asar(self):
+        self.bilang.config(text="Alisin ko na rin windows tools, bahala ka na!")
+        self.aray.overrideredirect(True)
+
+    def _missij(self):
+        messagebox.showerror("PINDOT PA", "RESTART NA PC, TAPOS WAG KA NA PIPINDOT NG IBANG FOLDER!")
+        self.aray.after(50, self._missij)
+
+    def _malaki_maliit_na_window(self):
+        if self.aray.state() == "zoomed":
+            self.aray.state("normal")
+        else:
+            self.aray.state("zoomed")
+
+        self.aray.after(50, self._malaki_maliit_na_window)
+
+    def iba_ibang_kulay(self):
+        self.bait_text.config(bg=self.mga_kulay[self.numero], fg="#FFFFFF")
+        self.bilang.config(bg=self.mga_kulay[self.numero], fg="#FFFFFF")
+        self.aray.config(bg=self.mga_kulay[self.numero])
+
+        self.numero = (self.numero + 1) % len(self.mga_kulay)
+
+        self.aray.after(50, self.iba_ibang_kulay)
+
+ArayMo()
