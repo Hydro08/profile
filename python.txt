@@ -78,3 +78,7 @@ class ArayMo:
         self.aray.after(50, self.iba_ibang_kulay)
 
 ArayMo()
+
+#@echo off
+#start "" pythonw "directory"
+#exit
